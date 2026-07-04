@@ -28,7 +28,7 @@
         </span>
         
         <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-5xl leading-tight">
-            Accédez à un Trésor de Connaissances pour le Prix d'un Simple Repas !
+            Accédez à un Trésor de Connaissances pour le Prix d'un Simple Repas <span class="hidden md:inline">!</span>
         </h1>
         
         <p class="text-zinc-400 text-lg md:text-xl max-w-2xl mt-6 leading-relaxed">
@@ -37,7 +37,7 @@
 
         <div class="mt-8 flex flex-col items-center">
             <div class="flex items-baseline gap-4 justify-center bg-zinc-900/50 border border-zinc-800 rounded-2xl px-6 py-4 backdrop-blur-sm">
-                <span class="text-zinc-500 text-xl line-through font-medium">12 500 FCFA</span>
+                <span class="text-zinc-500 text-xs md:text-xl line-through font-medium">12 500 FCFA</span>
                 <span class="text-4xl md:text-5xl font-black text-orange-600">6 000 FCFA</span>
             </div>
             <p class="text-xs text-orange-400/80 font-medium mt-3 italic"><i class="fa-regular fa-clock mr-1"></i> Le prix repassera à sa valeur initiale très bientôt.</p>
@@ -113,7 +113,7 @@
                 <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-500 text-xl group-hover:bg-orange-500 group-hover:text-black transition-all mb-4">
                     <i class="fa-solid fa-bitcoin-sign"></i>
                 </div>
-                <h3 class="font-bold text-lg">Marché financier & Bourse</h3>
+                <h3 class="font-bold text-lg">Marché financier</h3>
             </div>
             <div class="bg-zinc-900/40 p-6 rounded-2xl border border-zinc-800/60 hover:border-orange-500/40 transition-all group">
                 <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-500 text-xl group-hover:bg-orange-500 group-hover:text-black transition-all mb-4">
@@ -125,7 +125,7 @@
                 <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-500 text-xl group-hover:bg-orange-500 group-hover:text-black transition-all mb-4">
                     <i class="fa-solid fa-book-open"></i>
                 </div>
-                <h3 class="font-bold text-lg">Littérature, Romans & Histoire</h3>
+                <h3 class="font-bold text-lg">Littérature, Romans</h3>
             </div>
         </div>
         
@@ -221,7 +221,7 @@
             </div>
             <div class="bg-zinc-900/40 p-5 rounded-xl border border-zinc-800/60">
                 <h4 class="font-bold text-orange-500 mb-2"><i class="fa-solid fa-globe mr-2"></i> Hors zone CFA ? (Europe, Diaspora, autres pays)</h4>
-                <p class="text-zinc-400 text-sm">Oui ! L'offre est accessible partout. Le prix est d'environ <strong>10 $ USD</strong>. Vous pouvez effectuer votre règlement en toute sécurité par <strong>Carte Bancaire (Visa / MasterCard)</strong> ou via <strong>PayPal</strong>. Cliquez sur le bouton WhatsApp et nous vous transmettrons le lien de paiement international.</p>
+                <p class="text-zinc-400 text-sm">Oui ! L'offre est accessible partout. Le prix est d'environ <strong>10 $ USD</strong>. Vous pouvez effectuer votre règlement en toute sécurité par <strong>Carte Bancaire (Visa / MasterCard)</strong> ou via <strong>PayPal</strong>.</p>
             </div>
         </div>
     </section>
@@ -243,7 +243,11 @@
 
             <!-- Bouton Principal -->
             <a href="https://wa.me/221774731341?text=Bonjour,%20je%20souhaite%20profiter%20de%20l%27offre%20sp%C3%A9ciale%20%C3%A0%206000F%20pour%20la%20biblioth%C3%A8que%20num%C3%A9rique." 
-            class="w-full flex items-center justify-center gap-3 bg-orange-600 hover:bg-orange-500 text-white font-extrabold text-lg py-4 px-6 rounded-xl transition-all shadow-[0_4px_25px_rgba(249,115,22,0.25)] hover:shadow-[0_4px_35px_rgba(249,115,22,0.4)] transform hover:-translate-y-0.5 duration-200">
+                class="md:hidden w-full flex items-center justify-center gap-3 bg-orange-600 hover:bg-orange-500 text-white font-extrabold text-lg py-4 px-6 rounded-xl transition-all shadow-[0_4px_25px_rgba(249,115,22,0.25)] hover:shadow-[0_4px_35px_rgba(249,115,22,0.4)] transform hover:-translate-y-0.5 duration-200">
+                <span>COMMANDER VIA WHATSAPP</span>
+            </a>
+            <a href="https://wa.me/221774731341?text=Bonjour,%20je%20souhaite%20profiter%20de%20l%27offre%20sp%C3%A9ciale%20%C3%A0%206000F%20pour%20la%20biblioth%C3%A8que%20num%C3%A9rique." 
+                class="hidden md:flex items-center justify-center gap-3 bg-orange-600 hover:bg-orange-500 text-white font-extrabold text-lg py-4 px-6 rounded-xl transition-all shadow-[0_4px_25px_rgba(249,115,22,0.25)] hover:shadow-[0_4px_35px_rgba(249,115,22,0.4)] transform hover:-translate-y-0.5 duration-200">
                 <i class="fa-brands fa-whatsapp text-2xl"></i>
                 <span>COMMANDER VIA WHATSAPP</span>
             </a>
@@ -328,7 +332,7 @@
         
         window.addEventListener('scroll', function() {
             if (window.innerWidth < 768) {
-                if (window.scrollY > 800) {
+                if (window.scrollY > 700) {
                     stickyBar.classList.remove('hidden');
                 } else {
                     stickyBar.classList.add('hidden');
